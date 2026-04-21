@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RassaiFarms | Blenheim Apricots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-lockup">
+        <p class="eyebrow">Sun-ripened California orchard fruit</p>
+        <a class="brand" href="#top">RassaiFarms</a>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#products">Products</a>
+      </nav>
+      <a class="cart-link" href="#cart">Cart <span id="cart-count">0</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="section-kicker">Harvested in small batches</p>
+          <h1>Blenheim apricots grown with patience, sunshine, and orchard care.</h1>
+          <p class="hero-text">
+            RassaiFarms brings the classic sweet-tart flavor of Blenheim apricots
+            from our family farm to your kitchen, pantry, and table.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">Shop Apricots</a>
+            <a class="button button-secondary" href="#about">Our Story</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img
+            src="./assets/rassaifarms-hero-orchard.png"
+            alt="Rows of apricot trees and ripe fruit at RassaiFarms in warm evening light"
+          />
+        </figure>
+      </section>
+
+      <section class="info-strip" aria-label="Farm highlights">
+        <article>
+          <h2>Tree-ripened fruit</h2>
+          <p>Picked at peak color and flavor for bright, fragrant apricot taste.</p>
+        </article>
+        <article>
+          <h2>Seasonal harvest</h2>
+          <p>Fresh, dried, and preserve-ready offerings that follow the orchard calendar.</p>
+        </article>
+        <article>
+          <h2>Shipped with care</h2>
+          <p>Simple online ordering with a shopping cart ready for direct purchases.</p>
+        </article>
+      </section>
+
+      <section class="about-section" id="about">
+        <div>
+          <p class="section-kicker">About Us</p>
+          <h2>Rooted in an old-apricot tradition.</h2>
+        </div>
+        <p>
+          At RassaiFarms, we focus on one remarkable fruit: the Blenheim apricot.
+          Known for its rich aroma and honeyed tang, it is a variety worth growing
+          carefully and sharing proudly. This front page gives you a starting place
+          for telling your farm story, featuring your orchard, and selling seasonal goods.
+        </p>
+      </section>
+
+      <section class="products-section" id="products">
+        <div class="products-header">
+          <div>
+            <p class="section-kicker">Products</p>
+            <h2>Shop the orchard</h2>
+          </div>
+          <p>
+            Choose from fresh fruit, dried apricots, gift boxes, and pantry favorites.
+          </p>
+        </div>
+
+        <div class="products-layout">
+          <aside class="products-sidebar" aria-label="Product categories">
+            <h3>Browse Products</h3>
+            <button class="sidebar-link is-active" data-filter="all">All Products</button>
+            <button class="sidebar-link" data-filter="fresh">Fresh Harvest</button>
+            <button class="sidebar-link" data-filter="dried">Dried Fruit</button>
+            <button class="sidebar-link" data-filter="pantry">Pantry Goods</button>
+            <button class="sidebar-link" data-filter="gift">Gift Sets</button>
+
+            <div class="sidebar-card">
+              <p class="sidebar-label">Farm Notes</p>
+              <p>
+                Use this sidebar for seasonal messages, pickup details, or featured harvest news.
+              </p>
+            </div>
+          </aside>
+
+          <div class="products-body">
+            <div class="products-grid" id="product-grid" aria-live="polite"></div>
+          </div>
+
+          <aside class="cart-panel" id="cart">
+            <div class="cart-panel-header">
+              <p class="section-kicker">Shopping Cart</p>
+              <h3>Your selections</h3>
+            </div>
+            <div id="cart-items" class="cart-items">
+              <p class="empty-cart">Your cart is empty. Add products to begin your order.</p>
+            </div>
+            <div class="cart-summary">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="cart-subtotal">$0.00</strong>
+              </div>
+              <div class="summary-row">
+                <span>Estimated shipping</span>
+                <strong id="cart-shipping">$0.00</strong>
+              </div>
+              <div class="summary-row total-row">
+                <span>Total</span>
+                <strong id="cart-total">$0.00</strong>
+              </div>
+              <button class="button button-primary checkout-button" type="button">
+                Proceed to Checkout
+              </button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Plan your next harvest order.</h2>
+        </div>
+        <div class="contact-card">
+          <p><strong>Email:</strong> hello@rassaifarms.com</p>
+          <p><strong>Phone:</strong> (555) 014-APRICOT</p>
+          <p><strong>Farm Stand:</strong> 128 Orchard Lane, San Benito Valley, California</p>
+          <p>
+            Add your pickup windows, shipping policy, wholesale contact, or seasonal updates here.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
