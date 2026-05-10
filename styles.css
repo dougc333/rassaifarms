@@ -356,6 +356,10 @@ a {
   padding: clamp(42px, 7vw, 88px);
 }
 
+.events-copy h2 {
+  color: var(--ink);
+}
+
 .events-copy .eyebrow {
   color: var(--sky);
 }
