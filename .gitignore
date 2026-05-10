@@ -4,6 +4,11 @@
 *.png
 !assets/photos/*.jpg
 !assets/photos/*.png
+!apricots/
+!apricots/figs/
+!apricots/figs/green_figs.png
+!apricots/quince/
+!apricots/quince/quince.png
 
 assets/thumbs/
 .DS_Store
