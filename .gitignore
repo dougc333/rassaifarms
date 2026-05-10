@@ -4,6 +4,9 @@
 *.png
 !assets/photos/*.jpg
 !assets/photos/*.png
+!assets/full/
+!assets/full/*.jpg
+!assets/full/*.png
 !apricots/
 !apricots/figs/
 !apricots/figs/green_figs.png
