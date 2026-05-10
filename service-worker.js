@@ -1,4 +1,4 @@
-const CACHE_NAME = "rassai-farms-v3";
+const CACHE_NAME = "rassai-farms-v4";
 
 const CACHE_ASSETS = [
   "./",
@@ -15,6 +15,8 @@ const CACHE_ASSETS = [
   "./assets/photos/dc_grapes.jpg",
   "./assets/photos/grapes_blackfigs.png",
   "./assets/photos/peach1.png",
+  "./assets/photos/apples.png",
+  "./assets/photos/pears.png",
   "./assets/photos/blenheim-trees.png",
   "./assets/full/apricot-boxes.jpg",
   "./assets/full/black-fig.jpg",
