@@ -10,12 +10,14 @@ const CACHE_ASSETS = [
   "./assets/photos/fresh-apricots-hand.jpg",
   "./apricots/figs/green_figs.png",
   "./apricots/quince/quince.png",
+  "./assets/photos/pomegranite.png",
   "./assets/photos/blenheim-trees.png",
   "./assets/full/apricot-boxes.jpg",
   "./assets/full/black-fig.jpg",
   "./assets/full/fresh-apricots-hand.png",
   "./assets/full/green-figs.png",
   "./assets/full/quince.png",
+  "./assets/full/pomegranite.png",
   "./assets/full/blenheim-trees.png"
 ];
 
