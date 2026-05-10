@@ -79,42 +79,54 @@
         </div>
         <div class="fruit-grid">
           <article class="fruit-card apricot-card">
-            <img src="assets/photos/apricot-boxes.jpg" alt="Wooden trays filled with ripe apricots">
+            <button class="image-button" type="button" data-full-image="assets/photos/apricot-boxes.jpg" data-caption="Wooden trays filled with ripe apricots">
+              <img src="assets/photos/apricot-boxes.jpg" alt="Wooden trays filled with ripe apricots">
+            </button>
             <div>
               <h3>Apricots</h3>
               <p>U-pick starts July 4th weekend. Bring boxes, hats, and an eye for the ripest golden fruit.</p>
             </div>
           </article>
           <article class="fruit-card">
-            <img src="assets/photos/black-fig.jpg" alt="A ripe black fig held in hand">
+            <button class="image-button" type="button" data-full-image="assets/photos/black-fig.jpg" data-caption="A ripe black fig held in hand">
+              <img src="assets/photos/black-fig.jpg" alt="A ripe black fig held in hand">
+            </button>
             <div>
               <h3>Black Figs</h3>
               <p>Sweet black figs are available seasonally as the crop ripens on the farm.</p>
             </div>
           </article>
           <article class="fruit-card">
-            <img src="assets/photos/fresh-apricots-hand.jpg" alt="Fresh apricots held in a hand in the orchard">
+            <button class="image-button" type="button" data-full-image="assets/photos/fresh-apricots-hand.jpg" data-caption="Fresh apricots held in a hand in the orchard">
+              <img src="assets/photos/fresh-apricots-hand.jpg" alt="Fresh apricots held in a hand in the orchard">
+            </button>
             <div>
               <h3>Tree Ripe</h3>
               <p>Fruit is picked when the flavor is ready, with seasonal harvests changing through the year.</p>
             </div>
           </article>
           <article class="fruit-card">
-            <img src="apricots/figs/green_figs.png" alt="A box filled with green figs">
+            <button class="image-button" type="button" data-full-image="apricots/figs/green_figs.png" data-caption="A box filled with green figs">
+              <img src="apricots/figs/green_figs.png" alt="A box filled with green figs">
+            </button>
             <div>
               <h3>Green Figs</h3>
               <p>Green figs are sold fresh from the farm when the trees are producing.</p>
             </div>
           </article>
           <article class="fruit-card missing-photo">
-            <img src="apricots/quince/quince.png" alt="Fresh quince from Rassai Farms" onerror="this.onerror=null; this.src='assets/photos/fresh-apricots-hand.jpg';">
+            <button class="image-button" type="button" data-full-image="apricots/quince/quince.png" data-caption="Fresh quince from Rassai Farms">
+              <img src="apricots/quince/quince.png" alt="Fresh quince from Rassai Farms" onerror="this.onerror=null; this.src='assets/photos/fresh-apricots-hand.jpg';">
+            </button>
             <div>
               <h3>Quince</h3>
               <p>Fragrant quince are sold seasonally from the farm along with apricots and figs.</p>
             </div>
           </article>
           <article class="fruit-card apricot-card">
-            <img src="assets/photos/blenheim-trees.png" alt="Blenheim apricot trees full of ripe fruit">
+            <button class="image-button" type="button" data-full-image="assets/photos/blenheim-trees.png" data-caption="Blenheim apricot trees full of ripe fruit">
+              <img src="assets/photos/blenheim-trees.png" alt="Blenheim apricot trees full of ripe fruit">
+            </button>
             <div>
               <h3>Blenheim Trees</h3>
               <p>Walk the Blenheim rows and see the apricots ripening on the trees.</p>
@@ -202,6 +214,12 @@
       <p>Rassai Farms</p>
       <p>David & Susan · 520 Mt Diablo Lane, Hollister · <span id="year"></span></p>
     </footer>
+
+    <dialog class="image-dialog" id="imageDialog" aria-label="Full size farm photo">
+      <button class="dialog-close" type="button" aria-label="Close full size image">×</button>
+      <img id="dialogImage" src="" alt="">
+      <p id="dialogCaption"></p>
+    </dialog>
 
     <script src="script.js"></script>
   </body>

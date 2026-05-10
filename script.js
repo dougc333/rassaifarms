@@ -8,6 +8,10 @@ const photoShareForm = document.querySelector("#photoShareForm");
 const shareStatus = document.querySelector("#shareStatus");
 const previewGrid = document.querySelector("#previewGrid");
 const uploadDropzone = document.querySelector(".upload-dropzone");
+const imageDialog = document.querySelector("#imageDialog");
+const dialogImage = document.querySelector("#dialogImage");
+const dialogCaption = document.querySelector("#dialogCaption");
+const dialogClose = document.querySelector(".dialog-close");
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -79,5 +83,29 @@ photoShareForm?.addEventListener("submit", (event) => {
   event.preventDefault();
   if (shareStatus) {
     shareStatus.textContent = "Photo sharing preview complete. Connect Google login and storage to send these to David.";
+  }
+});
+
+document.querySelectorAll(".image-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!(imageDialog instanceof HTMLDialogElement) || !dialogImage || !dialogCaption) {
+      window.open(button.dataset.fullImage, "_blank", "noopener");
+      return;
+    }
+
+    dialogImage.src = button.dataset.fullImage || "";
+    dialogImage.alt = button.dataset.caption || "";
+    dialogCaption.textContent = button.dataset.caption || "";
+    imageDialog.showModal();
+  });
+});
+
+dialogClose?.addEventListener("click", () => {
+  imageDialog?.close();
+});
+
+imageDialog?.addEventListener("click", (event) => {
+  if (event.target === imageDialog) {
+    imageDialog.close();
   }
 });
