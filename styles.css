@@ -414,19 +414,19 @@ a {
 
 .events-section {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-  min-height: 620px;
+  grid-template-columns: 1fr;
   background: var(--harvest);
   color: var(--ink);
 }
 
 .events-image {
-  min-height: 360px;
+  height: clamp(320px, 42vw, 620px);
 }
 
 .events-copy {
-  align-self: center;
-  padding: clamp(42px, 7vw, 88px);
+  width: min(980px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 72px) 0;
 }
 
 .events-copy h2 {
