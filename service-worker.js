@@ -1,4 +1,4 @@
-const CACHE_NAME = "rassai-farms-v2";
+const CACHE_NAME = "rassai-farms-v3";
 
 const CACHE_ASSETS = [
   "./",
@@ -7,10 +7,14 @@ const CACHE_ASSETS = [
   "./script.js",
   "./assets/photos/apricot-boxes.jpg",
   "./assets/photos/black-fig.jpg",
+  "./assets/photos/blackfigs2.jpg",
   "./assets/photos/fresh-apricots-hand.jpg",
   "./assets/photos/green_figs.png",
   "./assets/photos/quince.png",
   "./assets/photos/pomegranite.png",
+  "./assets/photos/dc_grapes.jpg",
+  "./assets/photos/grapes_blackfigs.png",
+  "./assets/photos/peach1.png",
   "./assets/photos/blenheim-trees.png",
   "./assets/full/apricot-boxes.jpg",
   "./assets/full/black-fig.jpg",
@@ -18,6 +22,9 @@ const CACHE_ASSETS = [
   "./assets/full/green-figs.png",
   "./assets/full/quince.png",
   "./assets/full/pomegranite.png",
+  "./assets/full/dc_grapes.jpg",
+  "./assets/full/grapes_blackfigs.png",
+  "./assets/full/peach1.png",
   "./assets/full/blenheim-trees.png"
 ];
 

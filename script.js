@@ -76,6 +76,19 @@ if (uploadDropzone) {
   uploadDropzone.classList.toggle("is-disabled", photoUpload?.disabled ?? true);
 }
 
+document.querySelectorAll("img[data-swap-image]").forEach((image) => {
+  const primary = image.getAttribute("src");
+  const alternate = image.dataset.swapImage;
+
+  if (!primary || !alternate) {
+    return;
+  }
+
+  setInterval(() => {
+    image.src = image.src.endsWith(alternate) ? primary : alternate;
+  }, 3000);
+});
+
 googleSignIn?.addEventListener("click", enablePhotoSharing);
 
 photoUpload?.addEventListener("change", (event) => {
