@@ -1,0 +1,9 @@
+# Original source photos and temporary previews are kept locally.
+*.JPG
+*.jpg
+*.png
+!assets/photos/*.jpg
+!assets/photos/*.png
+
+assets/thumbs/
+.DS_Store
