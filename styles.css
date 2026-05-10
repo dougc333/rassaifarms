@@ -253,6 +253,10 @@ a {
   font-size: 1.08rem;
 }
 
+.notice-button {
+  margin-top: 24px;
+}
+
 .sign-figure {
   margin: 0;
 }
